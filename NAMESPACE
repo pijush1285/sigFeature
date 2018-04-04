@@ -1,0 +1,15 @@
+exportPattern("^[[:alpha:]]+")
+
+
+import(e1071)
+import(openxlsx)
+import(nlme)
+import(pheatmap)
+import(RColorBrewer)
+import(graphics)
+import(stats )
+import(utils)
+S3method(predict, sigFeature)
+import(Matrix)
+import(SparseM)
+import(biocViews)
