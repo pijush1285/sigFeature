@@ -12,7 +12,7 @@ Author: Pijush Das [aut, cre],
         Dr. Susanta Roychudhury [ctb],
         Dr. Sucheta Tripathy [ctb]
 Maintainer: Pijush Das <topijush@gmail.com>
-Depends: R (>= 3.4.3)
+Depends: R (>= 3.5.0)
 Suggests: knitr
 Description: This package provides a novel feature selection algorithm for binary classification using support vector machine recursive feature elimination SVM-RFE and Bayesian T statistic. In this feature selection process, the selected features are differentially significant between the two classes and also they are good classifier with higher degree of classification accuracy.
 License: GPL
