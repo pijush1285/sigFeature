@@ -5,22 +5,23 @@
 Write the features and sample IDs.
 }
 \description{
-This function will write the output data produce from the function sigFeatureRanking.enfold.
+This function will write the output data produce from the
+function sigFeatureRanking.enfold.
 }
 \usage{
 WritesigFeature(results, x,  fileName="Result")
 }
 
 \arguments{
-   \item{results}{
-  the object produce by the function named sigFeatureRanking.enfold
+    \item{results}{
+    the object produce by the function named sigFeatureRanking.enfold
+    }
+    \item{x}{
+    n-by-d data matrix to train (n chips/patients, d clones/genes).
 }
- \item{x}{
-  n-by-d data matrix to train (n chips/patients, d clones/genes).
-}
- \item{fileName}{
-  name of the output file.
-}
+    \item{fileName}{
+    name of the output file.
+    }
 }
 \details{
 This function will write the variables.
@@ -29,7 +30,9 @@ This function will write the variables.
 results output file.
 }
 \references{
-Becker, N., Werft, W., Toedt, G., Lichter, P. and Benner, A.(2009) PenalizedSVM: a R-package for feature selection SVM classification, Bioinformatics, 25(13),p 1711-1712
+Becker, N., Werft, W., Toedt, G., Lichter, P. and Benner,
+A.(2009) PenalizedSVM: a R-package for feature selection SVM
+classification, Bioinformatics, 25(13),p 1711-1712
 }
 \author{
 Pijush Das <topijush@gmail.comn>, et al.
@@ -43,25 +46,24 @@ predict.penSVM, svm (in package e1071)
 \examples{
 #Example for WritesigFeature()
 #Data set taken from GSE2280
-data(ExampleRawData)
-dim(ExampleRawData)
+library(SummarizedExperiment)
+data(ExampleRawData, package="sigFeature")
 
-
-x <- ExampleRawData[ ,-2205]
-y <- ExampleRawData[ ,2205]
+x  <- t(assays(ExampleRawData)$counts)
+y  <- colData(ExampleRawData)$sampleLabels
 
 
 #For 10 fold cross validation.
 #results = sigFeature.enfold(x,y,"kfold",10)
-#For leave one out cross validation
-#results = sigFeature.enfold(x,y,"LOO",0)
 
 
 #to write the output
-data(results)
-WritesigFeature(results,x)
+#data(results)
+#WritesigFeature(results, x)
 
 }
+
+
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")

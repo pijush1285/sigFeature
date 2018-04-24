@@ -1,22 +1,25 @@
 Package: sigFeature
 Type: Package
-Title: sigFeature: an R-package for significant feature selection using SVM-RFE & t-statistic
-Version: 0.99.0
-Date: 2018-04-04
+Title: sigFeature: Significant feature selection using 
+       SVM-RFE & t-statistic
+Version: 0.99.1
+Date: 2018-04-24
 Authors@R: c(person("Pijush Das", "Developer", role = c("aut", "cre"),
               email = "topijush@gmail.com"),
               person("Dr. Susanta Roychudhury", "User", role = "ctb"),
               person("Dr. Sucheta Tripathy", "User", role = "ctb",
               email = "tsucheta@iicb.res.in"))
-Author: Pijush Das [aut, cre],
-        Dr. Susanta Roychudhury [ctb],
-        Dr. Sucheta Tripathy [ctb]
-Maintainer: Pijush Das <topijush@gmail.com>
 Depends: R (>= 3.5.0)
-Suggests: knitr
-Description: This package provides a novel feature selection algorithm for binary classification using support vector machine recursive feature elimination SVM-RFE and Bayesian T statistic. In this feature selection process, the selected features are differentially significant between the two classes and also they are good classifier with higher degree of classification accuracy.
+Suggests: RUnit, BiocGenerics, knitr
+Description: This package provides a novel feature selection algorithm for binary 
+             classification using support vector machine recursive feature elimination 
+             SVM-RFE and Bayesian T statistic. In this feature selection process, the 
+             selected features are differentially significant between the two classes 
+             and also they are good classifier with higher degree of classification accuracy.
 License: GPL
 LazyData: TRUE
-biocViews: FeatureExtraction, GeneExpression, Microarray
-Imports: biocViews, e1071, nlme, openxlsx, pheatmap, RColorBrewer, Matrix, SparseM, graphics, stats, utils
+biocViews: FeatureExtraction, GeneExpression, Microarray, Transcription, mRNAMicroarray, 
+           GenePrediction, Normalization, Bayesian, Classification, SupportVectorMachine
+Imports: biocViews, e1071, nlme, openxlsx, pheatmap, RColorBrewer, Matrix, SparseM, 
+         graphics, stats, utils, SummarizedExperiment, BiocParallel, methods
 VignetteBuilder: knitr
