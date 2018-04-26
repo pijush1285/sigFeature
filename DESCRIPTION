@@ -3,14 +3,14 @@ Type: Package
 Title: sigFeature: Significant feature selection using 
        SVM-RFE & t-statistic
 Version: 0.99.2
-Date: 2018-04-24
+Date: 2018-04-26
 Authors@R: c(person("Pijush Das", "Developer", role = c("aut", "cre"),
               email = "topijush@gmail.com"),
               person("Dr. Susanta Roychudhury", "User", role = "ctb"),
               person("Dr. Sucheta Tripathy", "User", role = "ctb",
               email = "tsucheta@iicb.res.in"))
 Depends: R (>= 3.5.0)
-Suggests: RUnit, BiocGenerics, knitr
+Suggests: RUnit, BiocGenerics, knitr 
 Description: This package provides a novel feature selection algorithm for binary 
              classification using support vector machine recursive feature elimination 
              SVM-RFE and Bayesian T statistic. In this feature selection process, the 
@@ -20,6 +20,6 @@ License: GPL
 LazyData: TRUE
 biocViews: FeatureExtraction, GeneExpression, Microarray, Transcription, mRNAMicroarray, 
            GenePrediction, Normalization, Bayesian, Classification, SupportVectorMachine
-Imports: biocViews, e1071, nlme, openxlsx, pheatmap, RColorBrewer, Matrix, SparseM, 
+Imports: biocViews, nlme, e1071, openxlsx, pheatmap, RColorBrewer, Matrix, SparseM, 
          graphics, stats, utils, SummarizedExperiment, BiocParallel, methods
 VignetteBuilder: knitr
