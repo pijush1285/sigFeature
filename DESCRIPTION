@@ -2,8 +2,8 @@ Package: sigFeature
 Type: Package
 Title: sigFeature: Significant feature selection using 
        SVM-RFE & t-statistic
-Version: 0.99.4
-Date: 2018-04-26
+Version: 0.99.5
+Date: 2018-10-23
 Authors@R: c(person("Pijush Das", "Developer", role = c("aut", "cre"),
               email = "topijush@gmail.com"),
               person("Dr. Susanta Roychudhury", "User", role = "ctb"),
@@ -19,7 +19,7 @@ Description: This package provides a novel feature selection algorithm for binar
 License: GPL
 LazyData: TRUE
 biocViews: FeatureExtraction, GeneExpression, Microarray, Transcription, mRNAMicroarray, 
-           GenePrediction, Normalization, Bayesian, Classification, SupportVectorMachine
+           GenePrediction, Normalization, Classification, SupportVectorMachine
 Imports: biocViews, nlme, e1071, openxlsx, pheatmap, RColorBrewer, Matrix, SparseM, 
          graphics, stats, utils, SummarizedExperiment, BiocParallel, methods
 VignetteBuilder: knitr
