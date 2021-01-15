@@ -42,8 +42,10 @@ sigCVError <- function(i, results, input) {
         tunecontrol = tune.control(sampling='fix'))$perf)
 
 
-        error = mean(unlist(apply(svm.list, function(x) x$error)))
-        errorSD = sd(unlist(apply(svm.list, function(x) x$error)))
-
+        #error = mean(unlist(apply(svm.list, function(x) x$error)))
+        #errorSD = sd(unlist(apply(svm.list, function(x) x$error)))
+        error = mean(sapply(svm.list,function(x) x$error))
+        errorSD = sd(sapply(svm.list,function(x) x$error))
+                    
         return(list(svm.list=svm.list, error=error, errorSD=errorSD))
 }
