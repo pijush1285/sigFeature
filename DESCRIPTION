@@ -2,21 +2,22 @@ Package: sigFeature
 Type: Package
 Title: sigFeature: Significant feature selection using 
        SVM-RFE & t-statistic
-Version: 0.99.5
-Date: 2018-10-23
+Version: 0.99.6
+Date: 2021-08-31
 Authors@R: c(person("Pijush Das", "Developer", role = c("aut", "cre"),
               email = "topijush@gmail.com"),
               person("Dr. Susanta Roychudhury", "User", role = "ctb"),
               person("Dr. Sucheta Tripathy", "User", role = "ctb",
               email = "tsucheta@iicb.res.in"))
 Depends: R (>= 3.5.0)
-Suggests: RUnit, BiocGenerics, knitr 
+Suggests: RUnit, BiocGenerics, knitr, rmarkdown 
 Description: This package provides a novel feature selection algorithm for binary 
              classification using support vector machine recursive feature elimination 
              SVM-RFE and t-statistic. In this feature selection process, the selected 
              features are differentially significant between the two classes and also 
              they are good classifier with higher degree of classification accuracy.
-License: GPL
+License: GPL (>= 2)
+Encoding: UTF-8
 LazyData: TRUE
 biocViews: FeatureExtraction, GeneExpression, Microarray, Transcription, mRNAMicroarray, 
            GenePrediction, Normalization, Classification, SupportVectorMachine

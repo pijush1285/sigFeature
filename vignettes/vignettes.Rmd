@@ -2,19 +2,15 @@
 title: "sigFeature: Significant feature selection using SVM-RFE & t-statistic"
 author: "Pijush Das, Dr. Susanta Roychudhury, Dr. Sucheta Tripathy"
 date: 'April 26, 2018'
-output:
-    pdf_document:
-        toc: yes
-    word_document:
-        toc: yes
-    html_document:
-        toc: yes
+output: rmarkdown::html_vignette
+   
 
     
 vignette: >
     %\VignetteIndexEntry{sigFeature}
-    %\VignetteEngine{knitr::rmarkdown}
-    %\VignetteEncoding{UTF-8} 
+    %\VignetteEngine{knitr::rmarkdown} 
+    %\usepackage[utf8]{inputenc}
+
 ---
 
 ```{r setup, include=FALSE}

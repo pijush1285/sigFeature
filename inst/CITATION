@@ -1,0 +1,19 @@
+citHeader("Please cite the paper below for the sigFeature software itself.  Please also try to cite the appropriate methodology articles that describe the statistical methods implemented in sigFeature, depending on which sigFeature functions you are using.  The methodology is described in the section on significant feature selection of the article.")
+
+citEntry(entry="article",
+	author = c(person("Pijush","Das"),
+	           person("Anirban","Roychowdhury"),
+	           person("Subhadeep","Das"),
+	           person("Susanta","Roychoudhury"),
+	           person("Sucheta","Tripathy")),
+	title = "sigFeature: Novel Significant Feature Selection Method for Classification of Gene Expression Data Using Support Vector Machine and t Statistic",
+	journal = "Frontiers in genetics",
+	year = 2020,
+	volume = 11,
+	pages = 247,
+	doi = "10.3389/fgene.2020.00247",
+  url="https://www.frontiersin.org/article/10.3389/fgene.2020.00247",
+
+  textVersion =
+  "Das, P., Roychowdhury, A., Das, S., Roychoudhury, S. and Tripathy, S., 2020. sigFeature: novel significant feature selection method for classification of gene expression data using support vector machine and t statistic. Frontiers in genetics, 11, p.247."
+)
