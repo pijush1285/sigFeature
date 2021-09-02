@@ -25,7 +25,7 @@
  \subsection{New functionality}{\itemize{
 
     \item
-    Changes in version 0.99.6  (2021-08-31)
+    Changes in version 1.11.1  (2021-09-02)
     Update the DESCRIPTION file, vignettes file and the NEWS file.
 }}
 }
