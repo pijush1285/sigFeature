@@ -25,7 +25,11 @@
  \subsection{New functionality}{\itemize{
 
     \item
+<<<<<<< HEAD
     Changes in version 1.11.2  (2021-09-08)
+=======
+    Changes in version 1.11.2  (2021-09-03)
+>>>>>>> dc7aa9d9c827c235f2138b1f35076848e389d728
     Update the DESCRIPTION file, vignettes file and the NEWS file.
 }}
 }
