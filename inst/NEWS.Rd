@@ -21,11 +21,11 @@
 }}
 }
 
-\section{Version 0.99.6}{
+\section{Version 1.11.2}{
  \subsection{New functionality}{\itemize{
 
     \item
-    Changes in version 1.11.1  (2021-09-02)
+    Changes in version 1.11.2  (2021-09-08)
     Update the DESCRIPTION file, vignettes file and the NEWS file.
 }}
 }
